@@ -1,0 +1,274 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-red);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav a {
+  color: var(--main-white);
+  padding: 2rem;
+}
+
+nav ul li {
+  list-style: none;
+  color: var(--main-white);
+  display: block;
+  font-size: 1.6rem;
+  padding: 1.15rem 0;
+  margin-right: 20px;
+}
+
+nav ul li:hover {
+  background-color: #45567d;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--main-gray);
+  color: var(--main-white);
+  padding: 40px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  border-top: 4px solid var(--main-red);
+}
+
+footer a {
+  color: var(--main-white);
+  text-decoration: none;
+}
+
+.welcome h1 {
+  color: var(--main-white);
+  font-family: "Raleway", sans-serif;
+  font-size: 4rem;
+}
+
+.welcome p {
+  color: var(--main-red);
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.welcome {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 220vh;
+  height: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: var(--main-blue);
+  text-align: center;
+}
+
+main h2 {
+  color: var(--main-white);
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  border-bottom: solid var(--main-white);
+  padding-top: 100px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  margin-bottom: 0px;
+  margin-bottom: 6rem;
+}
+
+.project-tile {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  color: var(--main-white);
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project-display:hover .code {
+  color: #ff7f50;
+}
+
+.showall {
+  color: var(--main-white);
+  background-color: var(--main-gray);
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  border-radius: 2px;
+  position: relative;
+}
+
+.showall:hover {
+  background-color: var(--main-red);
+}
+.showallbtn {
+  background: var(--main-gray);
+  transition: background 0.3s ease-out;
+}
+
+.showallbtn .fas {
+  position: relative;
+  left: 0;
+  transition: left 0.3s ease-out;
+}
+
+.showallbtn:hover .fas {
+  left: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+  padding: 0 2rem;
+  background-color: var(--main-gray);
+}
+
+.contact h2 {
+  border-bottom: none;
+  font-size: 4rem;
+}
+
+.contact p {
+  color: var(--main-white);
+  font-style: italic;
+  font-size: 1.2rem;
+  padding-bottom: 60px;
+}
+
+.contact-links {
+  display: inline-block;
+}
+
+.linkbtn {
+  color: var(--main-white);
+  padding: 10px;
+  font-size: 1.5rem;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease-out;
+}
+
+.linkbtn:hover {
+  top: 8px;
+}
+
+/* Styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .linkbtn {
+    font-size: 1.3rem;
+  }
+  .showall {
+    margin-bottom: 20px;
+  }
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  nav {
+    justify-content: center;
+  }
+  main h2 {
+    font-size: 2rem;
+  }
+  .showall {
+    margin-bottom: 20px;
+  }
+  .contact h2 {
+    font-size: 2rem;
+  }
+  .linkbtn {
+    font-size: 1.2rem;
+  }
+  footer p {
+    font-size: 1rem;
+    font-weight: 200;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .welcome h1 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .showall {
+    margin-bottom: 20px;
+  }
+}
