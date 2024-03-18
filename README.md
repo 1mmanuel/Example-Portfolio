@@ -1,4 +1,4 @@
-# FCC-Portfolio
+# Example-Portfolio
 
 Build a Personal Portfolio Webpage
 
