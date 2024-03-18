@@ -11,6 +11,11 @@
   --main-red: #be3144;
   --main-blue: #45567d;
   --main-gray: #303841;
+  --main-darkblue: #05386b;
+  --main-darkgreen: #379683;
+  --main-green: #5cdb95;
+  --main-lightgreen: #8ee4af;
+  --main-font: #edf5e1;
 }
 
 body {
@@ -26,7 +31,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
+  background: var(--main-darkblue);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -36,7 +41,7 @@ nav ul {
 }
 
 nav a {
-  color: var(--main-white);
+  color: var(--main-font);
   padding: 2rem;
 }
 
@@ -56,13 +61,13 @@ nav ul li:hover {
 footer {
   display: flex;
   justify-content: space-evenly;
-  background: var(--main-gray);
-  color: var(--main-white);
+  background: var(--main-darkblue);
+  color: var(--main-font);
   padding: 40px;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4;
-  border-top: 4px solid var(--main-red);
+  border-top: 4px solid var(--main-darkgreen);
 }
 
 footer a {
@@ -71,13 +76,13 @@ footer a {
 }
 
 .welcome h1 {
-  color: var(--main-white);
+  color: var(--main-font);
   font-family: "Raleway", sans-serif;
   font-size: 4rem;
 }
 
 .welcome p {
-  color: var(--main-red);
+  color: var(--main-darkblue);
   font-style: italic;
   font-size: 2rem;
 }
@@ -91,7 +96,7 @@ footer a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  background-color: var(--main-green);
 }
 
 .projects {
@@ -104,15 +109,15 @@ footer a {
   height: auto;
   padding-left: 50px;
   padding-right: 50px;
-  background: var(--main-blue);
+  background: var(--main-darkgreen);
   text-align: center;
 }
 
 main h2 {
-  color: var(--main-white);
+  color: var(--main-font);
   font-family: "Raleway", sans-serif;
   font-size: 3rem;
-  border-bottom: solid var(--main-white);
+  border-bottom: solid var(--main-font);
   padding-top: 100px;
   max-width: 840px;
   margin: 0 auto;
@@ -130,7 +135,7 @@ main h2 {
 }
 
 .project-tile {
-  background: var(--main-gray);
+  background: var(--main-font);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   border-radius: 2px;
 }
@@ -148,7 +153,7 @@ a {
 .project-title {
   font-size: 1.5rem;
   padding: 1rem 0.5rem;
-  color: var(--main-white);
+  color: var(--main-darkblue);
 }
 
 .code {
@@ -161,7 +166,7 @@ a {
 }
 
 .showall {
-  color: var(--main-white);
+  color: var(--main-font);
   background-color: var(--main-gray);
   padding: 10px 20px;
   font-size: 1.3rem;
@@ -173,7 +178,7 @@ a {
   background-color: var(--main-red);
 }
 .showallbtn {
-  background: var(--main-gray);
+  background: var(--main-darkblue);
   transition: background 0.3s ease-out;
 }
 
@@ -197,7 +202,7 @@ a {
   min-height: 80vh;
   height: auto;
   padding: 0 2rem;
-  background-color: var(--main-gray);
+  background-color: var(--main-green);
 }
 
 .contact h2 {
@@ -206,7 +211,7 @@ a {
 }
 
 .contact p {
-  color: var(--main-white);
+  color: var(--main-darkblue);
   font-style: italic;
   font-size: 1.2rem;
   padding-bottom: 60px;
@@ -217,7 +222,7 @@ a {
 }
 
 .linkbtn {
-  color: var(--main-white);
+  color: var(--main-font);
   padding: 10px;
   font-size: 1.5rem;
   position: relative;
